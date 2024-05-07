@@ -13,6 +13,6 @@ Above we see an example of the real account for Jeff Bezos and a fake account im
 # An Automated Method for Detecing Fake Accounts
 The method seen in this repo in the notebook, works like this:
 
-<font color="red">This text is red</font>
+<font color="green">This text is red</font>
 
 

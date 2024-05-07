@@ -32,6 +32,7 @@ def compare_faces(img1,img2):
   for i in backends:
     try:
       result = DeepFace.verify(img1_path=img1, img2_path=img2, detector_backend = i)
+      #print(result)
       result_list.append(result['distance'])
     except Exception:
       pass

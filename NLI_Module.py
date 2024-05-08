@@ -18,7 +18,6 @@ def impersonation_detection(premise, hypothesis):
 def fan_tribute_detection(username, hypothesis):
     scores = []
     for i in ["This is a fan-made account for " + username, "This is not the real " + username, "This is a fan page in tribute to " + username]:
-        scores.append(nli_pipeline(i, hypothesis)['scores'])
-    #print(scores)
+        scores.append(nli_pipeline(i, hypothesis)['scores'][0])
     return np.max(scores)
 
